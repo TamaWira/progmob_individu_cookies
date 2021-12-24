@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    android:orientation="vertical"
+    tools:context=".formActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBackRecipe"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnBackRecipe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/btnBackRecipe"
+            app:layout_constraintTop_toTopOf="@+id/btnBackRecipe" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="@string/title"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <!-- FOOD NAME [start] -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/foodname"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editFoodName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/gilroy_bold"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/white" />
+            <!-- FOOD NAME [end] -->
+
+            <!-- DESCRIPTION [start] -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/description"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/gilroy_bold"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/white" />
+            <!-- DESCRIPTION [end] -->
+
+            <!-- RECIPE [start] -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/recipe"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/gilroy_bold"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/white" />
+            <!-- RECIPE [end] -->
+
+            <!-- TOOLS [start] -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/tools"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editTools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/gilroy_bold"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/white" />
+            <!-- TOOLS [end] -->
+
+            <!-- STEPS [start] -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_regular"
+                android:text="@string/steps"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/gilroy_bold"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:textColor="@color/white" />
+            <!-- STEPS [end] -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/btn_sign_in"
+                android:fontFamily="@font/asap_bold"
+                android:text="@string/addrec"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

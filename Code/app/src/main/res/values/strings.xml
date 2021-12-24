@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Cookies</string>
+    <string name="slogan">Fullfiling Your Cooking Needs</string>
+
+    <!--  landing page  -->
+    <string name="masuk">Sign In</string>
+    <string name="daftar">Sign Up</string>
+    <string name="atau">Or</string>
+
+    <!--  Registrasi  -->
+    <string name="back">Back</string>
+    <string name="fullname">Full Name</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="foodFocus">Food Focus</string>
+    <string name="appetizer">Appetizer</string>
+    <string name="main">Main Course</string>
+    <string name="dessert">Dessert</string>
+    <string name="love">Love For Cooking</string>
+    <string name="readGuide"><u>I Have Read the User Guidelines</u></string>
+    <string name="persen">: 0%</string>
+
+    <!-- Dashboard -->
+    <string name="welcome">Welcome!</string>
+    <string name="addFood">Add Recipe</string>
+
+    <!-- Food Recipe -->
+    <string name="id">ID</string>
+    <string name="title">Add Your Recipe!</string>
+    <string name="foodname">Food Name</string>
+    <string name="description">Description</string>
+    <string name="recipe">Recipe</string>
+    <string name="tools">Tools</string>
+    <string name="steps">Steps</string>
+    <string name="addrec">Add Recipe</string>
+
+    <!-- Update -->
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+
+</resources>
